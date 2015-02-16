@@ -1,44 +1,3 @@
-html{
-    font-family: 'Raleway',sans-serif;
-    background-color: #ffffff;
-}
-
-header{
-  background: #4DB6AC;
-}
-
-header > div > a{
-  text-decoration: none;
-  font-size: 3em;
-  text-align: center;
-  padding: 10% 10%;
-}
-
-.headerContainer{
-  width: 33%;
-  display:inline-block;
-  text-align: center;
-}
-
-a:link{
-  color: #E0E0E0;
-}
-
-a:visited{
-  color: #E0E0E0;
-}
-
-a:hover{
-  color: #ffffff;
-}
-
-.mainContainer{
-  width: 90%;
-  margin: auto;
-  --position: relative;
-  top: 3em;
-}
-
 .right-button{
   position: fixed;
   right: 1em;
@@ -55,9 +14,11 @@ a:hover{
 button > a{
   text-decoration: none;
   font-size: 1.5em;
-}
 
-footer{
-  text-align: center;
-  font-weight: bolder;
+.link{
+font-weight: bolder;
+width: 50%;
+text-align: center;
+margin: auto;
+padding-bottom: 5%;
 }
