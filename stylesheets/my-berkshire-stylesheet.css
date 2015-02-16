@@ -1,0 +1,133 @@
+html {
+  background-color: #ffffff;
+  color: #000080;
+}
+
+a:link{
+  color: #800080;
+  }
+
+a:visited{
+  color: #ff0000;
+}
+
+li{
+  font-size: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+li a{
+  font-size: 17px;
+}
+
+header{
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+span:first-letter{
+  font-size: 32px;
+}
+
+header > div > span{
+  display: inline-block;
+}
+
+li > a {
+  display: block;
+}
+
+.cap{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#third-word{
+  font-size: 13px;
+  font-weight: bold;
+  display: inline;
+}
+
+#last-header-line{
+  font-size: 16px;
+}
+
+}
+
+ul{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+ul > a {
+  display: block;
+}
+
+div > a > img {
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+}
+
+div {
+  display: block;
+}
+
+.cap{
+  font-size: 18px;
+}
+
+.geico-section{
+  text-align: center;
+}
+
+#comments{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 13px;
+}
+
+#midfont {
+  font-size: 13px;
+}
+
+footer{
+  font-size: 10px;
+  margin-top: 15px;
+}
+
+footer > span{
+  font-weight: bold;
+}
+
+.list-format{
+  float: left;
+  width: 40%;
+}
+
+.container{
+  float: left;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+}
+
+#toplist{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#bottomlist{
+  padding-top: 0;
+}
