@@ -18,109 +18,151 @@
 
   <main class="mainContainer">
 
-      <section>
-        <h1>Thinking Style</h1>
-        <h4>Abstract Sequential</h4>
-        <h5>February 22, 2015</h5>
-        <p>I'm an abstract sequential thinker, whatever that means.  Supposedely, it means that I have to be very sure of myself when I make an argument so I research to the point of madness.  Anything less and I'm a constant skeptic, always wondering "But why?" I can work alone for hours at a time and, unfortunately, do not think out of the box.  I can say, objectively, that all of these characteristics are true in my case.</p>
-        <p>DBC asked us to take the Gregorc Thinking Style questionaire, but I didn't really need a test.  I was well aware of these characterstics in myself.  I have good traits and bad when it comes to learning and working with others.  My need to be exactly right makes me research incessantly for even the most minor details.  I fell into a lot of black holes last week because of this.  I need to have more of a growth mind set.  I've mentioned this a lot since I've started DBC and I hope, in doing so, will make more more cognizant of the times that I may be falling into a black hole.  I need to realize that I'm learning a lot very quickly, and that if I don't get it all on the first try, that that's ok.  I already know a lot more than I knew yesterday, and that I can always come back to those things that are still giving me trouble.</p>
-        <p>I also noticed that pairing does not really come naturally to me.  I work alone a lot, especially when it comes to coding, however, I'm so glad DBC puts such an emphasis on it.  I think I've grown and learned a lot in my pairing abilities.</p>
-        <p>So I guess the moral here is that acknowledging your faults will hopefully make you more aware of them and, in turn, help you not fall into those bad situations as much.  I hope so, because I think time management will become valued more and more as we go on.</p>
-    </section>
+<section>
+  <h1>Issues in Tech</h1>
+  <h4>Machine Learning</h4>
+  <h5>March 1, 2015</h5>
+  <p>So I've taken a huge interest in Machine Learning recently.  Some might call it an obsession lol.  Interestingly, a lot of the essential pre reqs needed to understand Machine Learning at a deep level are all classes I took in college.  So I've been on Khan Academy and MIT open courseware getting refreshers on Linear Algebra, Calculus and Stats.  Not like I need any more work to go along with DBC but it doesn't really feel like work.  Yea, I'm a nerd lol</p>
+  <p>Machine Learning is a problem in tech right now for a few reasons.</p>
+  <p>We know it can be really useful based on its current implementations.  From google searches to the computers in your car controlling the drivetrain, current systems have already learned many things about you.  In these particular cases, it probably returns searches more quickly or accurately based on things you typically search on or the car might accelerate a bit faster or slower based on how hard you hit the pedal.  These implementations of machine learning are already embedded in our everyday society and many of us probably don't even know it.  This is great and all, but those applications are very specific.  If you took the computer from a car engine and put it on a truck, or a boat or in a cell phone, it would be completely, maybe catastrophically, lost.</p>
+  <p>Essentially, the "AI" we currently have is very specific.  Given a defined set of inputs (text, engine speed, etc.), it can return some very useful results.  However, the real "holy grail" of machine learning, IMO, is "Deep Learning".  Deep learning is being able to present a computer with a ton of very unrelated problems and having it not only make sense of them, but return viable answers.</p>
+  <p>I find this fascinating!  What if one day we could create a system that could listen to what we said and did it?  If when we came home we had no light switches, doorknobs, thermostats... if everything was just controlled by voice (think Captain Kirk talking to the computer in Star Trek).  I think this problem is amazing because it could lead to a level of advancement in technology never before seen.  What if we gave this computer the hardest physics problems we could think of and came of with a number of answers.  Some of them might be horrendously wrong, but some might be viable and better than anything we could've ever thought of in our lifetimes.  Not because the computer is necessarily smarter than any individual person, but because it has access to all the world's information and could combine all those resources better than any human mind could.  I could go on, but this blog post might get a little lengthy lol.</p>
+  <p>I also think that we're on the verge of breakthrough in this field.  <a href="http://en.wikipedia.org/wiki/Andrew_Ng">Andrew Ng</a>, now at Baidu and formally at Google, is basically the lead researcher in the world in this field and some of his ideas and his innovations are awe inspiring (I'm also taking his online class <a href="https://www.youtube.com/watch?v=UzxYlbK2c7E">Introduction to Machine Learning from Stanford</a>).  I think machine learning is the next big thing in tech, and I would love to be even a small part of it.</p>
+</section>
 
-        <section>
-        <h1>Phase 0, Week 3</h1>
-        <h4>Arrays and Hashes</h4>
-        <h5>February 22, 2015</h5>
-          <p>This week was much easier than last week.  I actually saw a moderator on the Google hangout say that last week was probably the peak of the amount of work we will have in a week without being on site.  THANK GOD !!  I was seriously having doubts that I was going to be able to complete Phase 0 with any more weeks like that !  PHEW !!</p>
-          <p>This week was our first stab at Ruby.  It was pretty simple, mostly because of the research we were asked to do for our application into DBC and, for me, because I've had experience in C++ programming.  Because of this, I found the challenges, for the most part, pretty straight-forward to get through.</p>
-          <p>We learned about objects, methods, enumerables, arrays and hashes.  Arrays and hashes are very similar, they're kind of like lists.  Arrays are more like lists than hashes in that you access them by the order you put them in.  So by defining an array like this:
+<section>
+  <h1>Phase 0, Week 4</h1>
+  <h4>Enumerable Methods</h4>
+  <h5>March 1, 2015</h5>
+  <p>This week was a bit more challenging that last week.  We learned about a pretty powerful type of method called "Enumerables".  We had used them before but I think this week was intended to give us a a lot of practice with them and see how we can use them best in our code.</p>
+  <p>For me, the best part of enumerables was when it came to refactoring.  I have a little C++ background so I was using tons of if and while loops for my initial code when attacking the challenges.  My code worked, but it was gigantic.  When I started refactoring it was CRAZY how much smaller I could get my code to be using enumerables.  It was like a game.  I was combining them, nesting them, just trying to get the code to be as tiny as possible.  One line was the ultimate goal lol.  </p>
+  <p>So basically an enumerable is a type of method that allows you to run through each element in the object you're calling the enumerable on.  If that sounds confusing, let me give you an example.  Say you have an array "x" that contains the numbers 1,2,3,4.
 
-          <pre class="brush: ruby;">Names = ["Ari","Cindy","Paul"]</pre>
+  <pre class="brush: ruby;">x = [1,2,3,4]</pre>
 
-           to print Cindy to the screen is just
+  Now say we'd like to get an array "y" that is each element of x multipled by 4:
 
-          <pre class="brush: ruby;">Names[2]</pre>
+  <pre class="brush: ruby;">y = [5,10,15,20]</pre>
 
-          Why not 3, you ask?  Well, confusingly (at least until you get used to it), the first index actually starts with 1, not 0.  So Names[0] is "Ari".  Get it?  Yea, once you get the syntax it's not too complicated.</p>
-          <p>Hashes are slightly, yet significantly, different.  To me, they remind me of a sort of database.  Hashes can be indexed by anything, to call anything in the list.  In that way, it's not at all intuitive what the "order" is.  Actually, a lot of people call this an "unordered list" in that, because anything can call anything, there really is no order.  For example, if I associated the 3 names above with the ages 32, 27 and 31, (which is indexed like so):
+  Instead of calling each individual element of x
 
-          <pre class="brush: ruby;">Ages = {"Ari" => 32,"Cindy" => 27,"Paul" => 31]</pre>
+  <pre class="brush: ruby;">y[0] = x[0]*1... y[1] = x[1]*1 etc...</pre>
 
-           the question "Which of these comes first in the list?" is not readily identifiable.  You have to know which element in the hash you want information about to get it.  That element is called a "key".  As an example, you couldn't ask "What's the age of the second person on the list?", because there is no second person per se.  You have to ask "What's Cindy's age?"  Cindy is the key that we want more information about.  The way you ask this to Ruby is just like you would for an Array:
+  We can just call the enumerable "map" to create a new array that multplies each element of x by 4 and puts it into y like so:
 
-          <pre class="brush: ruby;">Ages["Cindy"]</pre>
+  <pre class="brush: ruby;">y = x.map {|i| i*5}</pre>
 
-           which would return 27.  So while you can't know exactly where anything is, you can make a much more meaningful list, and, you can gain a lot more meaningful information from this list by knowing the keys.</p>
-           <p>Interesting stuff, huh?  Yea, I thought so ;o)
-           </p>
-           <p>Actually this stuff is really cool.  I'm already starting to see some of the power and potential of Ruby.  Can't wait for Week 4 !!
-           </p>
-    </section>
+  Done !!
 
-    <section>
-        <h1>Tough Week</h1>
-        <h4>Blackholes everywhere</h4>
-        <h5>February 17, 2015</h5>
-          <p>This was a rough week.  They told us in the introduction to the challenge that this week would probably take much longer than usual.  Boy, they weren't kidding !! In our defense, we had only been through one week of challenges so the frame of reference was tiny.  But wow, just wow...</p>
+  <p>Much easier than going through x element by element.  What the code is saying here in plain English is "using i as a place holder for the element you're currently on, go through each element of array x one by one, multiply it by 4, and create(map) this new resulting array (which has the same number of elements as x by the way) and put it in y".  I think I explained that as simply as possible, but I'm not sure.  Basically the enumerable "map" makes a new array exactly the same size as x but, using i as a placeholder for each element, does something to each element and puts it into a new array.</p>
 
-          <p>They really packed a lot into this week.  The HTML stuff was pretty easy, but the CSS stuff was really getting to me sometimes and I was CONSTANTLY falling into black holes !!  I have to work on that, but there are 2 things that I just can't stand:</p>
+   <p>These methods are great, I really enjoyed using them.  That's not news, though, because I LOVE CODING !! Enumerables are like another tool in the tool box that make my code better and better.  This week was sweet, just enough work to make it challenging but not enough to drive you mad lol.  I can't believe we're already on WEEK 5 !! ONWARD !
+   </p>
+</section>
 
-          <p>
-            <ol>
-              <li>Not completely understanding something</li>
-              <li>Something not coming out exactly as I intended</li>
-            </ol>
-          </p>
+<section>
+  <h1>Thinking Style</h1>
+  <h4>Abstract Sequential</h4>
+  <h5>February 22, 2015</h5>
+  <p>I'm an abstract sequential thinker, whatever that means.  Supposedely, it means that I have to be very sure of myself when I make an argument so I research to the point of madness.  Anything less and I'm a constant skeptic, always wondering "But why?" I can work alone for hours at a time and, unfortunately, do not think out of the box.  I can say, objectively, that all of these characteristics are true in my case.</p>
+  <p>DBC asked us to take the Gregorc Thinking Style questionaire, but I didn't really need a test.  I was well aware of these characterstics in myself.  I have good traits and bad when it comes to learning and working with others.  My need to be exactly right makes me research incessantly for even the most minor details.  I fell into a lot of black holes last week because of this.  I need to have more of a growth mind set.  I've mentioned this a lot since I've started DBC and I hope, in doing so, will make more more cognizant of the times that I may be falling into a black hole.  I need to realize that I'm learning a lot very quickly, and that if I don't get it all on the first try, that that's ok.  I already know a lot more than I knew yesterday, and that I can always come back to those things that are still giving me trouble.</p>
+  <p>I also noticed that pairing does not really come naturally to me.  I work alone a lot, especially when it comes to coding, however, I'm so glad DBC puts such an emphasis on it.  I think I've grown and learned a lot in my pairing abilities.</p>
+  <p>So I guess the moral here is that acknowledging your faults will hopefully make you more aware of them and, in turn, help you not fall into those bad situations as much.  I hope so, because I think time management will become valued more and more as we go on.</p>
+</section>
 
-          <p>These were happening all the time this week.  I probably spent a good 5 hours just in black holes (even though I had sufficiently completed the challenge).   I won't lie, the positioning stuff in CSS was really trial and error for me.  I just can't seem to understand it and nothing I've read (so far) really seems to be able to explain it in a way I can understand.  Then, even when an element was looking "kind of" how I wanted it to look, it was almost never perfect.</p>
+<section>
+  <h1>Phase 0, Week 3</h1>
+  <h4>Arrays and Hashes</h4>
+  <h5>February 22, 2015</h5>
+  <p>This week was much easier than last week.  I actually saw a moderator on the Google hangout say that last week was probably the peak of the amount of work we will have in a week without being on site.  THANK GOD !!  I was seriously having doubts that I was going to be able to complete Phase 0 with any more weeks like that !  PHEW !!</p>
+  <p>This week was our first stab at Ruby.  It was pretty simple, mostly because of the research we were asked to do for our application into DBC and, for me, because I've had experience in C++ programming.  Because of this, I found the challenges, for the most part, pretty straight-forward to get through.</p>
+  <p>We learned about objects, methods, enumerables, arrays and hashes.  Arrays and hashes are very similar, they're kind of like lists.  Arrays are more like lists than hashes in that you access them by the order you put them in.  So by defining an array like this:
 
-          <p>I have to work on being ok with not knowing everything.  I learned a TON this week, but I came away feeling like a bit of a failure.  I definitely need to work on positioning and display commands in CSS, but I need to be able to accept that I did good work and learned a lot, and that THAT'S GOOD.  I know more today than I did yesterday.  If I can learn to accept this and move on it would probably help me a lot with falling into these black holes and wasting a ridiculous amount of time !!</p>
+  <pre class="brush: ruby;">Names = ["Ari","Cindy","Paul"]</pre>
 
-          <p>This week was rough, and at times had me a bit panicked.  Are all the weeks at DBC going to be like this?  I'm not even on-site yet !  Am I going to make it?  I typically deal with these feelings pretty well so I was able to overcome them and get the challenges done but man, it's so early in the program and I'm already panicking a bit :o/  Even so, the biggest feeling I have is excitement.  I love this sh*t !!  BRING ON WEEK 3 !!!</p>
-    </section>
+   to print Cindy to the screen is just
 
-    <section>
-        <h1>Phase 0, Week 2</h1>
-        <h4>HTML and CSS</h4>
-        <h5>February 15, 2015</h5>
-          <p> So this week we learned about HTML and CSS.  HTML is like the skeleton of web pages and CSS is like the really really nice clothes you can dress up your HTML with (that's actually a very good analogy).  So, after a while, you start to notice that HTML is pretty basic and CSS can get INSANELY complicated.
-          </p>
-          <p>So some of the most important items in CSS are classes and IDs.  Classes and IDs are way to change specific elements in your HTML based on a number of factors.  Best practice is to name an element to a class if it's a common element throughout the site (like a font-style for links).  That way it's easy to change all of the instances of those elements at one time.  ID's are for when you have a unique item on a page or on the site that needs to be changed uniquely (like an image).  Taking the dress up example, I kind of think of classes like a uniform for the masses while IDs are like couture for very special parts of your site.
-          </p>
-          <p> One of the biggest parts of CSS is controlling your margins, padding and borders.  Margin is the length from the outside borders of the web page to the border of the element.  Padding is the length between the contents of the element and the border.  The border is, essentially, between the passing and the margin.  Even now I don't know if I have that 100% but, of all the CSS I learned this week, I'm most solid on that.  Like 90%.
-          </p>
-          <p> The hardest part of CSS for me was figuring out how to display things.  You can display things inline or block or inline-block or you could float things or adjust positions absolutely or relatively.  Pretty sure displaying something inline displays things across instead of down, but then elements are allowed to overlap.  Inline-block is the same thing, except things aren't allowed to overlap, they end up underneath on the row directly below the element.  I think... UGH !!  I need to find every tutorial I can about these things because, honestly, it's kind of like trial and error right now figuring our how things end up on my site !!  SO FRUSTRATING !  Fell into so many rabbit holes this week doing this.
-          </p>
-          <p> Such a long week this week.  On to Week 3.
-          </p>
-    </section>
+  <pre class="brush: ruby;">Names[2]</pre>
 
-    <section>
-        <h1>Kitchen vs Table</h1>
-        <h4>Reflection on Shereef's Fireside Chat</h4>
-        <h5>February 8, 2015</h5>
-          <p>First, I'd like to admit I was very impressed by Shereef's honesty in his responses to the questions. He made it clear that DBC doesn't have all the answers, they're constantly changing the cirriculum, that employers are much more aware of development bootcamps in general, etc. Very refreshing.</p>
+  Why not 3, you ask?  Well, confusingly (at least until you get used to it), the first index actually starts with 1, not 0.  So Names[0] is "Ari".  Get it?  Yea, once you get the syntax it's not too complicated.</p>
+  <p>Hashes are slightly, yet significantly, different.  To me, they remind me of a sort of database.  Hashes can be indexed by anything, to call anything in the list.  In that way, it's not at all intuitive what the "order" is.  Actually, a lot of people call this an "unordered list" in that, because anything can call anything, there really is no order.  For example, if I associated the 3 names above with the ages 32, 27 and 31, (which is indexed like so):
 
-          <p>What I'll say about how we learn in DBC is that it's definitely very different from ANYTHING I've done before. It's really interesting. I was telling my girlfriend the other day that it feels like I'm learning in a class where everyone is talking about the material at the same time and helping each other out. Obviously, in a typical classroom environment this would be chaotic but with the Google+ hangouts and email and Twitter, it works really well. When I've had an issue I just go into the hangout and, a couple times, someone else in the cohort has already mentioned it and another person has already solved it !! Sick !</p>
+  <pre class="brush: ruby;">Ages = {"Ari" => 32,"Cindy" => 27,"Paul" => 31]</pre>
 
-          <p>I did find something that Shereef said I bit concerning, though. He said that those people who are introverts might have a bit more trouble than those who are extroverts, or at least that they might not get as much out of the program as extroverts. He did go on to say that they provide plenty of resources to address these issues and get you to be more engaging with the other students which was reassuring, but, alas, I am an introvert. On top of that, I know exactly what he's talking about since it's already readily apparent on the hangout ! Some students are always posting and contributing new things and helping out on the hangout, while others don't really talk at all. Part of the reason that I haven't contributed as much as others is because I feel I am a bit behind. I didn't really get to start on the Week 1 material until about Thursday and I was already starting to get emails from my accountability group (the last challenge in Week 1) ! So my goal from now on is to start AS SOON AS POSSIBLE on the coming weeks' challenges so that I can feel like I'm being more of an extrovert and contributing more to the hangout.</p>
+   the question "Which of these comes first in the list?" is not readily identifiable.  You have to know which element in the hash you want information about to get it.  That element is called a "key".  As an example, you couldn't ask "What's the age of the second person on the list?", because there is no second person per se.  You have to ask "What's Cindy's age?"  Cindy is the key that we want more information about.  The way you ask this to Ruby is just like you would for an Array:
 
-          <p>Overall, I'm really excited about what I've seen and done so far and with what Shereef had to say. He really wants us to own this Bootcamp, to make it our own, to help each other and to ask questions. From what I've seen on the hangout this is definitely happening already and that's encouraging. Having people contribute so readily makes it easier for people like me who may not be as outgoing. Can't wait for Week 2 !!
-          </p>
-    </section>
+  <pre class="brush: ruby;">Ages["Cindy"]</pre>
 
-    <section>
-        <h1>Phase 0, Week 1 at DBC</h1>
-        <!--<h4>The subtitle, if you want it</h4>-->
-        <h5>February 8, 2015</h5>
-          <p>So, here we go; my journey to becoming a developer has officially begun !! This week has actually been pretty long. I don't know if I'm putting extra pressure on myself to understand everything as quickly as possible or if working a regular 9 to 5 with DBC is a little harder than I expected. Either way, I've gotten through it and I'm pretty satisfied with how well I know the material up to this point. We've learned about using command line, git, GitHub, version control and a bit about making websites and open source licenses.</p>
+   which would return 27.  So while you can't know exactly where anything is, you can make a much more meaningful list, and, you can gain a lot more meaningful information from this list by knowing the keys.</p>
+   <p>Interesting stuff, huh?  Yea, I thought so ;o)
+   </p>
+   <p>Actually this stuff is really cool.  I'm already starting to see some of the power and potential of Ruby.  Can't wait for Week 4 !!
+   </p>
+</section>
 
-          <p>NO CODING YET !! I can see how this first week of DBC could be a bit frustrating for those who want to just dive into coding. We didn't learn anything about any languages this week. We learned, however, about the foundations of what are probably the best programming practices, especially for working in teams with other developers. We learned about GitHub, which is like a social network for developers. Well, not exactly but in many ways it is. You have different accounts and can follow other people on the site. But its mostly so we can save our code in the cloud for other people to see, and we communicate with it using git our local machines. We use git in Terminal to write different commands which commnicate to and from GitHub. Most of the communication we've learned so far is about cloning our GitHub repos to our local machines, making changes on our machines and sending (pushing) them back up to GitHub. Then on GitHub we can merge our changes with all the rest of our other code. This is all tracked through git and allows us to have a very descriptive running log of changes (or different versions) we've made since each time we "commit" a change, it's like a checkpoint that gets saved in git. I realize now how important version control is in the coding ecosystem, and it makes a lot of sense. When you're changing things in a long, complex web app or program, it's super helpful to have an idea of what changes were made, when, by whom if, all of a sudden, the project stops working correctly. I must admit, initially, I didn't understand why all the emphasis on making changes with git and all the practice doing so, but as I went along and got more comfortable it made a lot more sense. Besides the fact that if my computer craps out I have all my code in the GitHub cloud which is very reassuring :)</p>
+<section>
+  <h1>Tough Week</h1>
+  <h4>Blackholes everywhere</h4>
+  <h5>February 17, 2015</h5>
+  <p>This was a rough week.  They told us in the introduction to the challenge that this week would probably take much longer than usual.  Boy, they weren't kidding !! In our defense, we had only been through one week of challenges so the frame of reference was tiny.  But wow, just wow...</p>
 
-          <p>Well, that's it for week 1. Honestly, I'm pooped but I will probably check out what's going on with next week's challenge and really look forward to the peer sessions and meeting my NYC cohort mates. Till next week !
-          </p>
-    </section>
+  <p>They really packed a lot into this week.  The HTML stuff was pretty easy, but the CSS stuff was really getting to me sometimes and I was CONSTANTLY falling into black holes !!  I have to work on that, but there are 2 things that I just can't stand:</p>
+
+  <p>
+    <ol>
+      <li>Not completely understanding something</li>
+      <li>Something not coming out exactly as I intended</li>
+    </ol>
+  </p>
+
+  <p>These were happening all the time this week.  I probably spent a good 5 hours just in black holes (even though I had sufficiently completed the challenge).   I won't lie, the positioning stuff in CSS was really trial and error for me.  I just can't seem to understand it and nothing I've read (so far) really seems to be able to explain it in a way I can understand.  Then, even when an element was looking "kind of" how I wanted it to look, it was almost never perfect.</p>
+
+  <p>I have to work on being ok with not knowing everything.  I learned a TON this week, but I came away feeling like a bit of a failure.  I definitely need to work on positioning and display commands in CSS, but I need to be able to accept that I did good work and learned a lot, and that THAT'S GOOD.  I know more today than I did yesterday.  If I can learn to accept this and move on it would probably help me a lot with falling into these black holes and wasting a ridiculous amount of time !!</p>
+
+  <p>This week was rough, and at times had me a bit panicked.  Are all the weeks at DBC going to be like this?  I'm not even on-site yet !  Am I going to make it?  I typically deal with these feelings pretty well so I was able to overcome them and get the challenges done but man, it's so early in the program and I'm already panicking a bit :o/  Even so, the biggest feeling I have is excitement.  I love this sh*t !!  BRING ON WEEK 3 !!!</p>
+</section>
+
+<section>
+  <h1>Phase 0, Week 2</h1>
+  <h4>HTML and CSS</h4>
+  <h5>February 15, 2015</h5>
+  <p> So this week we learned about HTML and CSS.  HTML is like the skeleton of web pages and CSS is like the really really nice clothes you can dress up your HTML with (that's actually a very good analogy).  So, after a while, you start to notice that HTML is pretty basic and CSS can get INSANELY complicated.
+  </p>
+  <p>So some of the most important items in CSS are classes and IDs.  Classes and IDs are way to change specific elements in your HTML based on a number of factors.  Best practice is to name an element to a class if it's a common element throughout the site (like a font-style for links).  That way it's easy to change all of the instances of those elements at one time.  ID's are for when you have a unique item on a page or on the site that needs to be changed uniquely (like an image).  Taking the dress up example, I kind of think of classes like a uniform for the masses while IDs are like couture for very special parts of your site.
+  </p>
+  <p> One of the biggest parts of CSS is controlling your margins, padding and borders.  Margin is the length from the outside borders of the web page to the border of the element.  Padding is the length between the contents of the element and the border.  The border is, essentially, between the passing and the margin.  Even now I don't know if I have that 100% but, of all the CSS I learned this week, I'm most solid on that.  Like 90%.
+  </p>
+  <p> The hardest part of CSS for me was figuring out how to display things.  You can display things inline or block or inline-block or you could float things or adjust positions absolutely or relatively.  Pretty sure displaying something inline displays things across instead of down, but then elements are allowed to overlap.  Inline-block is the same thing, except things aren't allowed to overlap, they end up underneath on the row directly below the element.  I think... UGH !!  I need to find every tutorial I can about these things because, honestly, it's kind of like trial and error right now figuring our how things end up on my site !!  SO FRUSTRATING !  Fell into so many rabbit holes this week doing this.
+  </p>
+  <p> Such a long week this week.  On to Week 3.
+  </p>
+</section>
+
+<section>
+  <h1>Kitchen vs Table</h1>
+  <h4>Reflection on Shereef's Fireside Chat</h4>
+  <h5>February 8, 2015</h5>
+  <p>First, I'd like to admit I was very impressed by Shereef's honesty in his responses to the questions. He made it clear that DBC doesn't have all the answers, they're constantly changing the cirriculum, that employers are much more aware of development bootcamps in general, etc. Very refreshing.</p>
+
+  <p>What I'll say about how we learn in DBC is that it's definitely very different from ANYTHING I've done before. It's really interesting. I was telling my girlfriend the other day that it feels like I'm learning in a class where everyone is talking about the material at the same time and helping each other out. Obviously, in a typical classroom environment this would be chaotic but with the Google+ hangouts and email and Twitter, it works really well. When I've had an issue I just go into the hangout and, a couple times, someone else in the cohort has already mentioned it and another person has already solved it !! Sick !</p>
+
+  <p>I did find something that Shereef said I bit concerning, though. He said that those people who are introverts might have a bit more trouble than those who are extroverts, or at least that they might not get as much out of the program as extroverts. He did go on to say that they provide plenty of resources to address these issues and get you to be more engaging with the other students which was reassuring, but, alas, I am an introvert. On top of that, I know exactly what he's talking about since it's already readily apparent on the hangout ! Some students are always posting and contributing new things and helping out on the hangout, while others don't really talk at all. Part of the reason that I haven't contributed as much as others is because I feel I am a bit behind. I didn't really get to start on the Week 1 material until about Thursday and I was already starting to get emails from my accountability group (the last challenge in Week 1) ! So my goal from now on is to start AS SOON AS POSSIBLE on the coming weeks' challenges so that I can feel like I'm being more of an extrovert and contributing more to the hangout.</p>
+
+  <p>Overall, I'm really excited about what I've seen and done so far and with what Shereef had to say. He really wants us to own this Bootcamp, to make it our own, to help each other and to ask questions. From what I've seen on the hangout this is definitely happening already and that's encouraging. Having people contribute so readily makes it easier for people like me who may not be as outgoing. Can't wait for Week 2 !!
+  </p>
+</section>
+
+<section>
+  <h1>Phase 0, Week 1 at DBC</h1>
+  <!--<h4>The subtitle, if you want it</h4>-->
+  <h5>February 8, 2015</h5>
+  <p>So, here we go; my journey to becoming a developer has officially begun !! This week has actually been pretty long. I don't know if I'm putting extra pressure on myself to understand everything as quickly as possible or if working a regular 9 to 5 with DBC is a little harder than I expected. Either way, I've gotten through it and I'm pretty satisfied with how well I know the material up to this point. We've learned about using command line, git, GitHub, version control and a bit about making websites and open source licenses.</p>
+
+  <p>NO CODING YET !! I can see how this first week of DBC could be a bit frustrating for those who want to just dive into coding. We didn't learn anything about any languages this week. We learned, however, about the foundations of what are probably the best programming practices, especially for working in teams with other developers. We learned about GitHub, which is like a social network for developers. Well, not exactly but in many ways it is. You have different accounts and can follow other people on the site. But its mostly so we can save our code in the cloud for other people to see, and we communicate with it using git our local machines. We use git in Terminal to write different commands which commnicate to and from GitHub. Most of the communication we've learned so far is about cloning our GitHub repos to our local machines, making changes on our machines and sending (pushing) them back up to GitHub. Then on GitHub we can merge our changes with all the rest of our other code. This is all tracked through git and allows us to have a very descriptive running log of changes (or different versions) we've made since each time we "commit" a change, it's like a checkpoint that gets saved in git. I realize now how important version control is in the coding ecosystem, and it makes a lot of sense. When you're changing things in a long, complex web app or program, it's super helpful to have an idea of what changes were made, when, by whom if, all of a sudden, the project stops working correctly. I must admit, initially, I didn't understand why all the emphasis on making changes with git and all the practice doing so, but as I went along and got more comfortable it made a lot more sense. Besides the fact that if my computer craps out I have all my code in the GitHub cloud which is very reassuring :)</p>
+
+  <p>Well, that's it for week 1. Honestly, I'm pooped but I will probably check out what's going on with next week's challenge and really look forward to the peer sessions and meeting my NYC cohort mates. Till next week !
+  </p>
+</section>
 
   </main>
 
