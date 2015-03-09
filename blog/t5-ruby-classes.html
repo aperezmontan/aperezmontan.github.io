@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aris' DBC Blog</title>
+  <meta charset="UTF-8">
+
+  <script type="text/javascript" src="path/to/scripts/shBrushRuby.js"></script>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+
+  <body>
+    <header>
+      <div class="headerContainer"><a class="headerLinks" href="#">Home</a></div>
+      <div class="headerContainer"><a class="headerLinks" href="#">Blog</a></div>
+      <div class="headerContainer"><a class="headerLinks" href="#">Links</a></div>
+    </header>
+
+  <main class="mainContainer">
+
+      <section>
+        <h1>Phase 0, Week 5</h1>
+        <h4>Classes</h4>
+        <h5>March 8, 2015</h5>
+          <p>Classes.  These things are powerful.  I know it.  I know it because I've seen them.  I've seen them when I've looked at the source code of the various web sites and apps that made me wonder "wow, how'd they do that?!"  They really hit us hard with Classes this week, and I still don't know if I've got them 100%, but I'll try to explain them in a way that most people can understand.</p>
+          <p>You can think of Classes like any object that in general is the same but can have different models or characteristics.  The example we will use is a car.</p>
+          <p>All cars have general, necessary characteristics.  They all have engines/motors, wheels, seats, etc.  However, we all know that they can be very different.  Some engines are much bigger or smaller than others and they can be internal combustion or eletric.  They can have different size wheels or different numbers of seats.  But whether you have a compact car or a minivan, all cars fall into a general category: Cars.</p>
+          <p>So let's say we want to define a class called cars and give it a few characteristics like engine and wheels.  You can do that with the following syntax:
+
+          <pre class="brush: ruby;">class Car</pre>
+
+          We're going to initialize the engine to be a V6.  The "initialize" method is unique to classes, giving us something to start with in every new instance of a class.
+
+          <pre class="brush: ruby;">  def initialize</pre>
+          <pre class="brush: ruby;">    @engine = "V6"</pre>
+          <pre class="brush: ruby;">  end</pre>
+
+          So we've defined the "characteristic" of engine as V6 to start.  Other "characteristics" can be defined using methods and variables:
+
+          <pre class="brush: ruby;">  def wheels(sizeOfWheels)</pre>
+          <pre class="brush: ruby;">    if sizeOfWheels > 20</pre>
+          <pre class="brush: ruby;">      @engine = "V8"</pre>
+          <pre class="brush: ruby;">    end</pre>
+          <pre class="brush: ruby;">  end</pre>
+
+          We also need a way to call the @engine variable.  To do this we create a method that only includes the @engine variable:
+
+          <pre class="brush: ruby;">  def engine</pre>
+          <pre class="brush: ruby;">    @engine</pre>
+          <pre class="brush: ruby;">  end</pre>
+
+          Finally we need to end the class definition:
+
+          <pre class="brush: ruby;">end</pre>
+
+          As you can see from the example above, there seems to be a lot going on here.  It's not really that complicated.  First, you might've noticed, variables and methods can have the same name (in the "engine" method).  The method "engine" is an instance method.  This means that every new version of "Car" will have a method attached to it called "engine" that has been initialized to "V6" (from the "initialize" method further above). This is also something that is unique to classes.  You might've also noticed there's an "@" symbol before the "engine" variable.  This is an example of an instance variable and it means it can be used by every method in the class.  For example, the "wheels" method is changing the value of @engine if it satisfies a certain condition, namely, if the number "sizeOfWheels" is bigger than 20.</p>
+
+          <p>Obviously the "wheels" method differs from the "engine" method because a value can actually be passed to it.  Also, the variable "sizeOfWheels" is only accessible in the "wheels" method because there is no @ in front of it.</p>
+
+          We can now create a new instance of this class like so:
+
+          <pre class="brush: ruby;">truck = Car.new</pre>
+
+          We've now created a new Car class called "truck".  If we were to print our "engine" method containing the type of our engine, we would get:
+
+          <pre class="brush: ruby;">p truck.engine</pre>
+          <pre class="brush: ruby;">>>"V6"</pre>
+
+          Our truck has 24 inch rims, though, so let's pass that value into the "wheels" method:
+
+          <pre class="brush: ruby;">truck.wheels(24)</pre>
+
+          Because of this, let's check what our engine method returns now:
+
+          <pre class="brush: ruby;">p truck.engine</pre>
+          <pre class="brush: ruby;">>>"V8"</pre>
+
+          Cool huh?!  Now we can make all different kids of cars with all kinds of different "characteristics" (methods) that can communicate with each other with instance variables.  Sweet !!
+
+    </section>
+
+  </main>
+
+    <footer>Copyright Info Here</footer>
+  </body>
+</html>
