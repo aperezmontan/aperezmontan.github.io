@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aris' DBC Blog</title>
+  <meta charset="UTF-8">
+
+  <script type="text/javascript" src="path/to/scripts/shBrushRuby.js"></script>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+
+  <body>
+    <header>
+      <div class="headerContainer"><a class="headerLinks" href="#">Home</a></div>
+      <div class="headerContainer"><a class="headerLinks" href="#">Blog</a></div>
+      <div class="headerContainer"><a class="headerLinks" href="#">Links</a></div>
+    </header>
+
+  <main class="mainContainer">
+
+      <section>
+        <h1>Phase 0, Week 7</h1>
+        <h4>JavaScript</h4>
+        <h5>March 25, 2015</h5>
+          <p>This week we've started learning JavaScript.  I'll freely admit, I'd never heard of Ruby before I started DBC.  Learning it was great, Ruby is so useful and I've really enjoyed learning how to make my own programs with it.  That said, learning JavaScript is very exciting.  JavaScript is called "the language of the web".  Given it's prominence, finally learning it this week has really solidified the fact that we are working to become true web developers !!</p>
+          <p>That said, JavaScript is SOOOOO much harder to use than Ruby.  Granted, we've only been working in JavaScript for a week but I've already experienced countless times where Ruby's intuitive methods and syntax make it far superior to implement than JavaScript.  I've caught myself saying "God, this would be so much easier in Ruby !!" more than once.</p>
+          <p>A particularly annoying example is sorting an array of numbers in Ruby versus JavaScript.  Let's say we have this array of numbers: b = [7,16,3,4,29,45,28].  Using the syntax "b.sort" in Ruby would produce this:
+
+            <pre class="brush: ruby;">b.sort >> [3,4,7,16,28,29,45]</pre>
+
+          Great, that's exactly what we expected.  Using "b.sort()" in JavaScript, however, produces this:
+
+            <pre class="brush: JavaScript;">b.sort() >> [16,28,29,3,4,45,7]</pre>
+
+          Why, o JavaScript, why ??  So it seems that JavaScript turns the elements in the array into strings before sorting and, because 1 comes before 2, it doesn't matter if it's 1 or 10000, it will always come before 2.  Joy -__- </p>
+          <p>This issue is easily remedied using the compare() function.
+
+            <pre class="brush: JavaScript;">b.sort(function(a, b){return a-b}) >> [3,4,7,16,28,29,45]</pre>
+
+          This function compares each element in its true number form and sorts the array properly based on how you orient the a and b.  a - b will sort the numbers from smallest to largest.  b - a will do the reverse.  Such is life... I guess.</p>
+          <p>On site is less than 2 weeks away !  CAN'T WAIT !!</p>
+
+    </section>
+
+  </main>
+
+    <footer>Copyright Info Here</footer>
+  </body>
+</html>
