@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <link type="text/css" rel="stylesheet" href="cheat_sheet.css">
+ <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,300,400' rel='stylesheet' type='text/css'>
+<title></title>
+<meta charset="UTF-8">
+<style type="text/css" media="screen">
+
+#example {
+ width: 100%;
+ height: 305px;
+}
+
+#example div {
+}
+
+#div-before, #div-after {
+ background-color:#88d;
+ color:#000;
+ width:400px;
+}
+#div-1 {
+ width:400px;
+ background-color:#000;
+ color:#fff;
+}
+#div-1-padding {
+ padding:10px;
+}
+#div-1a {
+ background-color:#d33;
+ color:#fff;
+}
+#div-1b {
+ background-color:#3d3;
+ color:#fff;
+}
+#div-1c {
+ background-color:#33d;
+ color:#fff;
+}
+#example div p {
+ margin:0 .25em;
+ padding:.25em 0;
+}
+.description {
+/* width:40%;
+ position: relative;
+ top:-287px;
+ left: -35%;*/
+ float: right;
+}
+
+pre {
+ padding:1em;
+ border:1px dashed #aaa;
+ background:#fafafa;
+}
+p {
+ margin:0.5em 0;
+}
+h3 {
+ color:#999;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+ <h1><u>CSS Positioning Cheat Sheet</u></h1>
+</header>
+
+<main>
+  <div class = "cheat1">
+    <h2>Position Static</h2>
+    <div id="example">
+      <p>
+
+      <div id="div-before">
+      <p>id = div-before</p>
+      </div>
+
+      <div id="div-1">
+      <div id="div-1-padding">
+
+        <p>id = div-1</p>
+
+      <div id="div-1a">
+        <p>id = div-1a</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pretium dui sit amet felis. Integer sit amet diam. Phasellus ultrices viverra velit.</p>
+      </div>
+
+      <div id="div-1b">
+        <p>id = div-1b</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pretium dui sit amet felis. Integer sit amet diam. Phasellus ultrices viverra velit. Nam mattis, arcu ut bibendum commodo, magna nisi tincidunt tortor, quis accumsan augue ipsum id lorem.</p>
+      </div>
+
+      <div id="div-1c">
+        <p>id = div-1c</p></div>
+
+      </div>
+    </div><!-- /id=div-1-padding /id=div-1 -->
+
+    <div id="div-after">
+      <p>id = div-after</p>
+    </div>
+
+    <p class="description"><b>1.) position:static</b><br>
+The default positioning for all elements is position:static, which means the element is not positioned and occurs where it normally would in the document.  Normally you wouldn't specify this unless you needed to override a positioning that had been previously set.<br>
+<br>
+<br>
+<code>
+#div-1 {<br>
+ position:static;<br>
+}
+</code>
+
+</p>
+    </p>
+  </div>
+</div>
+</body>
