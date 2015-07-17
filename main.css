@@ -1,0 +1,158 @@
+html {
+  background: url(Background.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.mainContentContainer img {
+  width: 100%;
+  opacity: 0.9;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
+  vertical-align: middle;
+}
+
+.content {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+font-size: 1em;
+}
+
+body {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.mainMenu a {
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.mainMenu a:hover {
+  color: black;
+  background: white;
+}
+
+.mainMenu a:focus {
+  color: black;
+  background: white;
+}
+
+.mainMenu a:active {
+  background: none;
+}
+
+.mainMenu {
+  height:138px;
+  background:#000;
+  opacity:0.6;
+  filter:alpha(opacity=60);
+}
+
+.mainMenuContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submenu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submenu a {
+  font-size: 24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.submenu a:hover {
+  color: black;
+  background: none;
+}
+
+.submenu a:focus {
+  outline: none;
+  color: black;
+  background: none;
+}
+
+.mainContentContainer {
+  display: flex;
+  height:575px;
+  overflow: scroll;
+}
+
+.mainContent  {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.contentText {
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    width: 400px;
+    /*font-weight: bold;*/
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+}
+
+.contentText a:link{
+  text-decoration: none;
+  color: white;
+}
+
+.contentText a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.contentText a:hover {
+  color: #99CCFF;
+}
+
+footer {
+font-family: Calibri, sans-serif;
+font-size: 1em;
+color: grey;
+text-align: center;
+margin: 0 0 0 0;
+padding: 0;
+}
+
+.mainMenu a:hover {
+  color: black;
+  background: white;
+}
+
+.contentText ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.contentText span:hover {
+  color: #33CCFF;
+  cursor: pointer;
+  background: none;
+}
+
+#blog{
+  font-family: 'Raleway',sans-serif;
+  background-color: #ffffff;
+  margin-left: 40px;
+  margin-right: 40px;
+  background: none;
+}
+
+#entraContainer img {
+  border-bottom: 1px solid black;
+}
+
+#fcContainer img {
+  border-bottom: 1px solid black;
+}
