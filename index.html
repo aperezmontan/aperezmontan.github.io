@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Aris' DBC Blog</title>
-  <meta charset="UTF-8">
-
-  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <title>Ari</title>
+  <link href='http://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
+  <script src="javascript/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="javascript/jqueryandjs.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="hover.css">
   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 </head>
+<body>
+  <header>
+    <div class="mainMenu">
+      <div class="mainMenuContent">
+        <ul>
+          <li><a href="#" id="aboutMeButton" class="hvr-fade">ABOUT ME</a></li>
+          <li><a href="#" id="projectsButton" class="hvr-fade">PROJECTS</a></li>
+          <li><a href="#" id="blogButton" class="hvr-fade">BLOG</a></li>
+        </ul>
+      </div>
+    <div>
+  </header>
 
-  <body>
-    <header>
-      <div class="headerContainer"><a href="index.html">Home</a></div>
-      <div class="headerContainer"><a href="blog/blog.html">Blog</a></div>
-      <div class="headerContainer"><a href="blog/links.html">Links</a></div>
-    </header>
-
-      <main class="mainContainer">
-
-        <div id="imgContainer">
-          <img id="mainPic" src="IMG_4805.JPG" alt="Aris"/>
+  <div class="allContent">
+    <div id="aboutMeMenu" class="submenu">
+      <div></div>
+      <a href="#" id="myStoryButton" class="hvr-fade">My Story</a>
+      <a href="#" id="likesButton" class="hvr-fade">Likes</a>
+      <a href="#" id="lovesButton" class="hvr-fade">Loves</a>
+      <div></div>
+    </div>
+    <div id="projectsMenu" class="submenu">
+      <div></div>
+      <a href="entra.html" id="entraButton" class="hvr-fade">Entra</a>
+      <a href="flashycards.html" id="flashyButton" class="hvr-fade">Flashy Cards</a>
+      <!-- <a href="others.html" id="moreButton" class="hvr-fade">Other Projects</a> -->
+      <div></div>
+    </div>
+      <div class="mainContentContainer">
+        <div id="aboutMeContainer" class="mainContent">
+          <div id="aboutMeImg">
+            <img src="images/Me.jpg" alt="Me!">
+          </div>
         </div>
-        <div id="mainDesc">
-            <h1 class="blogTitle">Aris' DBC Blog</h1>
-            <h3 class="blogTitle">The chronicles of a DBC student in NYC</h3>
-        </div>
+      </div>
+  </div>
 
-      </main>
+  <footer>
+    <p>#stayhumble #stayhungry</p>
+  </footer>
 
-      <footer>Too close for missiles, I'm switching to guns</footer>
-  </body>
+</body>
 </html>
